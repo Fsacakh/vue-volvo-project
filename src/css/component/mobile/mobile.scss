@@ -1,0 +1,82 @@
+//过滤器
+.vo-mobile-filter {
+    height: $vo-mobile-filter-height;
+    padding: 0.7rem 0;
+    background-color: #fff;
+    .vux-flexbox-item {
+        font-size: 0.72rem;
+        text-align: center;
+        padding-left: 0.6rem;
+        padding-right: 0.6rem;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: clip;
+        >i {
+            font-size: 1.2rem;
+            font-weight: 50;
+        }
+        &.active {
+            color: rgb(70, 120, 240);
+        }
+    }
+    .vo-mobile-filter-divider {
+        height: 1.4rem;
+        width: 1px;
+        background-color: #ccc;
+    }
+}
+
+// 过滤器选项
+.vo-mobile-filter-picker {
+    position: absolute;
+    left: 0;
+    top: $vo-mobile-filter-picker-top;
+    background: #fff;
+    z-index: 501;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    -webkit-transition-duration: 300ms;
+    transition-duration: 300ms;
+    max-height: 20rem;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    border-bottom: 1px solid #ccc;
+    &.active {
+        border-top: 1px solid #ccc;
+    }
+}
+
+//title
+.vo-mobile-title {
+    >div {
+        height: $vo-mobile-title-height;
+        color: #fff;
+        font-size: .75rem !important;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+//过滤器选项tab
+.vue-tabs {
+    font-size: 0.72rem;
+    >.nav-tabs>li>a {
+        border-radius: 0;
+        color: #bbb;
+    }
+    >.nav>li>a {
+        padding: 0.9rem 1.6rem;
+        max-width: $vo-mobile-filter-picker-tab-max-width;
+        word-wrap: break-word;
+        word-break: normal;
+    }
+    >.nav-tabs>li>a>i {
+        font-style: normal;
+    }
+}

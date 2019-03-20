@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>.eslintrc.js</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.ln { color: rgb(0,0,0); font-weight: normal; font-style: normal; }
+.s0 { color: rgb(248,248,242); }
+.s1 { color: rgb(255,255,255); }
+.s2 { color: rgb(247,38,113); }
+.s3 { color: rgb(102,217,239); }
+.s4 { color: rgb(255,231,146); }
+.s5 { color: rgb(115,111,92); }
+</style>
+</head>
+<BODY BGCOLOR="#272822">
+<TABLE CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#C0C0C0" >
+<TR><TD><CENTER>
+<FONT FACE="Arial, Helvetica" COLOR="#000000">
+.eslintrc.js</FONT>
+</center></TD></TR></TABLE>
+<pre>
+
+<span class="s0">module</span><span class="s1">.</span><span class="s0">exports </span><span class="s2">= </span><span class="s1">{</span><span class="s0"> 
+  root</span><span class="s2">: </span><span class="s3">true</span><span class="s1">,</span><span class="s0"> 
+  parser</span><span class="s2">: </span><span class="s4">'babel-eslint'</span><span class="s1">,</span><span class="s0"> 
+  parserOptions</span><span class="s2">: </span><span class="s1">{</span><span class="s0"> 
+    sourceType</span><span class="s2">: </span><span class="s4">'module'</span><span class="s0"> 
+  </span><span class="s1">},</span><span class="s0"> 
+  </span><span class="s5">// https://github.com/feross/standard/blob/master/RULES.md#javascript-standard-style</span><span class="s0"> 
+  </span><span class="s3">extends</span><span class="s2">: </span><span class="s4">'standard'</span><span class="s1">,</span><span class="s0"> 
+  </span><span class="s5">// required to lint *.vue files</span><span class="s0"> 
+  plugins</span><span class="s2">: </span><span class="s1">[</span><span class="s0"> 
+    </span><span class="s4">'html'</span><span class="s0"> 
+  </span><span class="s1">],</span><span class="s0"> 
+  </span><span class="s5">// add your custom rules here</span><span class="s0"> 
+  </span><span class="s4">'rules'</span><span class="s2">: </span><span class="s1">{</span><span class="s0"> 
+    </span><span class="s5">// allow paren-less arrow functions</span><span class="s0"> 
+    </span><span class="s4">'arrow-parens'</span><span class="s2">: </span><span class="s3">0</span><span class="s1">,</span><span class="s0"> 
+    </span><span class="s5">// allow async-await</span><span class="s0"> 
+    </span><span class="s4">'generator-star-spacing'</span><span class="s2">: </span><span class="s3">0</span><span class="s1">,</span><span class="s0"> 
+    </span><span class="s5">// allow debugger during development</span><span class="s0"> 
+    </span><span class="s4">'no-debugger'</span><span class="s2">: </span><span class="s0">process</span><span class="s1">.</span><span class="s0">env</span><span class="s1">.</span><span class="s0">NODE_ENV </span><span class="s2">=== </span><span class="s4">'production' </span><span class="s2">? </span><span class="s3">2 </span><span class="s2">: </span><span class="s3">0</span><span class="s0"> 
+  </span><span class="s1">}</span><span class="s0"> 
+</span><span class="s1">}</span><span class="s0"> 
+</span></pre>
+</body>
+</html>

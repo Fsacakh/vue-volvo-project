@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>百展云</title>
+    <link rel="stylesheet" href="../static/w3.css">
+  </head>
+
+  <body class="w3-content" style="max-width:1200px">
+
+    <ul class="w3-navbar w3-large w3-green w3-left-align">
+      <li class="w3-hide-medium w3-hide-large  w3-green w3-opennav w3-right">
+        <a href="javascript:void(0);" onclick="myFunction()">X</a>
+      </li>
+      <li><a href="#">首页</a></li>
+      <li class="w3-hide-small"><a href="#">注册</a></li>
+      <li class="w3-hide-small"><a href="#">登录</a></li>
+    </ul>
+
+    <div id="demo" class="w3-hide w3-hide-large w3-hide-medium">
+      <ul class="w3-navbar w3-left-align w3-large w3-green">
+        <li><a href="#">注册</a></li>
+        <li><a href="#">登录</a></li>
+      </ul>
+    </div>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("demo");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+    </script>
+
+  </body>
+</html>

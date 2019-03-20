@@ -1,0 +1,59 @@
+<html>
+<head>
+  <title>The W3.CSS Forms</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../static/w3.css">
+</head>
+<body>
+<form class="w3-container w3-card-8">
+  <div class="w3-group">
+    <input class="w3-input" type="text" style="width:90%" required>
+    <label class="w3-label">User Name</label>
+  </div>
+  <div class="w3-group">
+    <input class="w3-input" type="text" style="width:90%" required>
+    <label class="w3-label">Email</label>
+  </div>
+  <div class="w3-group">
+    <textarea class="w3-input" style="width:90%" required></textarea>
+    <label class="w3-label">Comments</label>
+  </div>
+  <div class="w3-row">
+    <div class="w3-half">
+      <label class="w3-checkbox">
+        <input type="checkbox" checked="checked">
+        <div class="w3-checkmark"></div> Married
+      </label>
+      <br>
+      <label class="w3-checkbox">
+        <input type="checkbox">
+        <div class="w3-checkmark"></div> Single
+      </label>
+      <br>
+      <label class="w3-checkbox">
+        <input type="checkbox" disabled>
+        <div class="w3-checkmark"></div> Don't know (Disabled)
+      </label>
+      <br>
+      <br>
+    </div>
+    <div class="w3-half">
+      <label class="w3-checkbox">
+        <input type="radio" name="gender" value="male" checked>
+        <div class="w3-checkmark"></div> Male
+      </label>
+      <br>
+      <label class="w3-checkbox">
+        <input type="radio" name="gender" value="female">
+        <div class="w3-checkmark"></div> Female
+      </label>
+      <br>
+      <label class="w3-checkbox">
+        <input type="radio" name="gender" value="female" disabled>
+        <div class="w3-checkmark"></div> Don't know (Disabled)
+      </label>
+    </div>
+  </div>
+</form>
+</body>
+</html>

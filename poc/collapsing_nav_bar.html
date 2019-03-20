@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../static/w3.css">
+<body>
+
+<ul class="w3-navbar w3-large w3-blue-grey w3-left-align">
+  <li class="w3-hide-medium w3-hide-large  w3-blue-grey w3-opennav w3-right">
+    <a href="javascript:void(0);" onclick="myFunction()">X</a>
+  </li>
+  <li><a href="#">Home</a></li>
+  <li class="w3-hide-small"><a href="#">Link 1</a></li>
+  <li class="w3-hide-small"><a href="#">Link 2</a></li>
+  <li class="w3-hide-small"><a href="#">Link 3</a></li>
+</ul>
+
+<div id="demo" class="w3-hide w3-hide-large w3-hide-medium">
+  <ul class="w3-navbar w3-left-align w3-large w3-blue-grey">
+    <li><a href="#">Link 1</a></li>
+    <li><a href="#">Link 2</a></li>
+    <li><a href="#">Link 3</a></li>
+  </ul>
+</div>
+
+<div class="w3-container">
+  <p>In the example below, the navigation bar is replaced with a button (X) in the top right corner when shown on tablets and mobile devices. When the button is clicked, the navigation bar will be displayed stacked.</p>
+  <p>Resize the screen to see the effect.</p>
+</div>
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("demo");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else {
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+</script>
+
+</body>
+</html>
+

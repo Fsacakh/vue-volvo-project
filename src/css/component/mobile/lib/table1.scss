@@ -1,0 +1,167 @@
+/***
+Customized Bootstrap Tables
+***/
+
+
+/***
+Default table
+***/
+
+.table {
+    &.table-bordered {
+        thead>tr>th {
+            border-bottom: 0;
+        }
+        thead>tr>th,
+        tbody>tr>td {
+            border: 1px solid #e1e1e1;
+        }
+    }
+    tr.heading>th {
+        background-color: #eee !important;
+    }
+    td .img-responsive {
+        width: 100%;
+    }
+}
+
+
+/***
+Responsive & Scrollable Tables
+***/
+
+.table-scrollable {
+    width: 100%;
+    height: calc(100vh - 7.5rem);
+    overflow-x: auto;
+    overflow-y: auto;
+    border: 1px solid #dddddd;
+    margin: 0 0 !important;
+    &.table-scrollable-borderless {
+        border: 0;
+    }
+    >.table {
+        width: 100% !important;
+        margin: 0 !important;
+        margin-bottom: 0;
+        background-color: #fff;
+    }
+    >.table-bordered {
+        border: 0;
+        >thead>tr>th:first-child,
+        >tbody>tr>th:first-child,
+        >tfoot>tr>th:first-child,
+        >thead>tr>td:first-child,
+        >tbody>tr>td:first-child,
+        >tfoot>tr>td:first-child {
+            border-left: 0;
+        }
+        >thead>tr>th:last-child,
+        >tbody>tr>th:last-child,
+        >tfoot>tr>th:last-child,
+        >thead>tr>td:last-child,
+        >tbody>tr>td:last-child,
+        >tfoot>tr>td:last-child {
+            border-right: 0;
+        }
+        >thead>tr:last-child>th,
+        >tbody>tr:last-child>th,
+        >tfoot>tr:last-child>th,
+        >thead>tr:last-child>td,
+        >tbody>tr:last-child>td,
+        >tfoot>tr:last-child>td {
+            border-bottom: 0;
+        }
+    }
+}
+
+
+/***
+Custom tables
+***/
+
+.table.table-full-width {
+    width: 100% !important;
+}
+
+.table .btn {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 5px;
+}
+
+.table thead tr th {
+    min-width: calc(20vw);
+    height: 2.5rem !important;
+    font-size: .6rem;
+    font-weight: 400;
+    //padding: .8rem 0 !important;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 1px solid rgb(221, 221, 221) !important;
+}
+
+.table tbody tr td {
+    min-width: calc(20vw);
+    height: 2.5rem !important;
+    font-size: .6rem;
+    font-weight: 400;
+    text-overflow: clip;
+    //padding: .8rem .6rem !important;
+}
+
+.table tbody tr td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+/**
+  Custom table div
+*/
+
+.leftDiv {
+    width: calc(20vw);
+    float: left;
+}
+
+.leftDiv .table {
+    width: 100%;
+}
+
+.leftDiv1 {
+    width: 100%;
+    color: #7d7d7d;
+    background-color: #ddd;
+}
+
+.leftDiv2 {
+    width: 100%;
+    max-height: $vo-mobile-table-max-height;
+    color: rgb(70, 120, 240);
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.rightDiv {
+    float: left;
+    width: calc(80vw);
+}
+
+.rightDiv1 {
+    width: 100%;
+    color: #7d7d7d;
+    background-color: #ddd;
+    overflow: hidden;
+}
+
+.rightDiv2 {
+    width: 100%;
+    max-height: $vo-mobile-table-max-height;
+    background-color: #fff;
+    overflow: auto;
+}
+
+.rightDiv .table {
+    width: 100%;
+}

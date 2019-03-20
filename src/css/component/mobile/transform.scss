@@ -1,0 +1,6 @@
+/* normal transition */
+
+.vo-mobile-filter-picker-animate-enter,
+.vo-mobile-filter-picker-animate-leave-active {
+    transform: translate3d(0, -100%, 0);
+}

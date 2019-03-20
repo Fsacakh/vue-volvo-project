@@ -1,0 +1,69 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+    text-rendering: optimizelegibility;
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 20px;
+    //background-color: #f3f3f4;
+}
+
+input {
+    border: 0px;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+#app {
+    //width: 100%;
+    //height: 100%;
+    //font-size: 0.7rem;
+    //line-height: 1.5;
+    //text-align: center;
+    //color: #2c3e50;
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    height: 100%;
+}
+
+.vo-mobile {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-size: 0.7rem;
+    line-height: 1.5;
+    text-align: center;
+    color: #2c3e50;
+}
+
+ul,
+li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+//基本定义
+@import "./component/mobile/variable.scss";
+@import "./../node_modules/font-awesome/css/font-awesome.min.css";
+@import "./../node_modules/vue-nav-tabs/dist/vue-tabs.min.css";
+@import "./../node_modules/mint-ui/lib/style.css";
+@import "./component/mobile/lib/sm.scss";
+//@import "./component/mobile/lib/table.scss";
+@import "./component/mobile/lib/table1.scss";
+@import "./component/mobile/mobile.scss";
+@import "./component/mobile/transform.scss"
